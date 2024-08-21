@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>E-commerce Website</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="top-bar">
+			<div class="top-bar-left">
+				<a href="#" class="login-button">Login</a>
+				<a href="#" class="signup-button">Signup</a>
+			</div>
+			<div class="top-bar-right">
+				<input type="text" class="search-bar" placeholder="Search...">
+				<button class="search-button">Search</button>
+			</div>
+		</header>
+		<header class="main-bar">
+			<div class="brand-name">E-Shop</div>
+			<nav class="navbar">
+				<a href="#">Home</a>
+				<a href="#">Products</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				<button class="cart-button" onclick="toggleCart()">Cart (0)</button>
+			</nav>
+			<div class="burger-menu" onclick="toggleDropdown()">&#9776;</div>
+			<div id="dropdown-menu" class="dropdown-menu">
+				<a href="#">Home</a>
+				<a href="#">Products</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				<a href="#" class="cart-button" onclick="toggleCart()">Cart (0)</a>
+			</div>
+		</header>
+		<section class="banner">
+			<div class="slides">
+				<img src="https://www.forevernew.co.in//pub/media/wysiwyg/home/FreedomAug2024Desktop).jpg" class="slide" alt="Banner 1">
+				<img src="banner2.jpg" class="slide" alt="Banner 2">
+				<img src="banner3.jpg" class="slide" alt="Banner 3">
+			</div>
+		</section>
+		<main>
+			<section class="product-list">
+				<div class="product-item">
+					<img src="product1.jpg" alt="Product 1">
+					<h2>Product 1</h2>
+					<p>$10.00</p>
+					<button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+				</div>
+			</section>
+		</main>
+		<script src="script.js"></script>
+	</body>
+	</html>
+</head>
